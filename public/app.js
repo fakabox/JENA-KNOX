@@ -18,6 +18,7 @@ const tracks = [
 
 // Add live services here when the album is released.
 const platforms = [];
+const audioVersion = '20260923-1';
 
 const icons = {
   play: '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"></path></svg>',
@@ -91,7 +92,7 @@ async function playTrack(index) {
   if (index < 0 || index >= tracks.length) return;
   if (currentIndex !== index) {
     currentIndex = index;
-    audio.src = tracks[index].file;
+    audio.src = `${tracks[index].file}?v=${audioVersion}`;
     audio.currentTime = 0;
   }
   try {
