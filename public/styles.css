@@ -74,6 +74,9 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-lineca
   justify-content: space-between;
   padding: 30px 0;
 }
+.nav-left, .social-links { display: flex; align-items: center; }
+.nav-left { gap: 22px; }
+.social-links { gap: 8px; }
 .wordmark {
   color: white;
   text-decoration: none;
@@ -81,13 +84,26 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-lineca
   letter-spacing: .36em;
   font-weight: 650;
 }
-.share-pill, .primary-action {
+.share-pill, .social-pill, .primary-action {
   display: inline-flex;
   align-items: center;
   gap: 9px;
   border-radius: 999px;
   cursor: pointer;
 }
+.social-pill {
+  min-height: 38px;
+  padding: 8px 13px;
+  border: 1px solid rgba(255,255,255,.22);
+  color: rgba(255,255,255,.86);
+  background: rgba(3,19,35,.22);
+  font-size: .76rem;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+.social-pill svg { width: 16px; height: 16px; }
+.social-pill:hover, .social-pill:focus-visible { border-color: rgba(255,255,255,.42); background: rgba(255,255,255,.12); transform: translateY(-1px); }
 .share-pill {
   border: 1px solid rgba(255,255,255,.26);
   padding: 10px 16px;
@@ -315,7 +331,10 @@ button:focus-visible, a:focus-visible, [role="slider"]:focus-visible { outline: 
 @media (max-width: 520px) {
   body.player-visible { padding-bottom: 118px; }
   .nav-shell { padding-block: 22px; }
+  .nav-left { align-items: flex-start; flex-direction: column; gap: 11px; }
   .wordmark { font-size: .72rem; letter-spacing: .3em; }
+  .social-links { gap: 6px; }
+  .social-pill { min-height: 34px; padding: 7px 10px; font-size: .7rem; }
   .share-pill { padding: 9px 12px; font-size: .84rem; }
   .hero-content { padding-bottom: 68px; }
   .hero-copy h1 { font-size: clamp(3.3rem, 16.8vw, 5.3rem); }
