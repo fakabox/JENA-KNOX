@@ -1,7 +1,7 @@
 const tracks = [
   { title: 'Play Dead', file: 'audio/01-play-dead.mp3' },
   { title: 'No Sleep for the Brave', file: 'audio/02-no-sleep-for-the-brave.mp3' },
-  { title: 'Paranoïa', file: 'audio/03-paranoia.mp3' },
+  { title: 'Paranoia', file: 'audio/03-paranoia.mp3' },
   { title: 'Just One More', file: 'audio/04-just-one-more.mp3' },
   { title: 'When Heaven Breaks', file: 'audio/05-when-heaven-breaks.mp3' },
   { title: 'Night Game', file: 'audio/06-night-game.mp3' },

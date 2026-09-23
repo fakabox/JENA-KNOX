@@ -248,10 +248,6 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-lineca
 .track-row.is-active .play-icon, .track-row:hover .play-icon { color: #07131f; border-color: var(--orange); background: var(--orange); }
 .noscript { padding: 24px 0; color: var(--soft); }
 
-.album-note { padding: 110px 20px; background: linear-gradient(115deg, #082b50, #075fb0 56%, #0d263c); }
-.album-note-inner { width: min(920px, 100%); margin: auto; text-align: center; }
-.album-note blockquote { margin: 0 auto 50px; max-width: 840px; font-size: clamp(2.6rem, 6.7vw, 6rem); line-height: .98; letter-spacing: -.055em; }
-.album-note a { color: rgba(255,255,255,.7); text-underline-offset: 5px; }
 footer { display: flex; justify-content: space-between; gap: 30px; padding-block: 32px; color: #6f8498; font-size: .64rem; letter-spacing: .18em; }
 
 .now-playing {
@@ -343,7 +339,6 @@ button:focus-visible, a:focus-visible, [role="slider"]:focus-visible { outline: 
   .track-row { grid-template-columns: 34px minmax(0,1fr) auto; gap: 8px; }
   .track-title { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
   .play-icon { width: 38px; height: 38px; }
-  .album-note { padding-block: 85px; }
   .share-grid { grid-template-columns: 1fr; }
   .now-playing { left: 8px; right: 8px; bottom: 8px; }
   .player-timeline { grid-template-columns: 32px 1fr 32px; }

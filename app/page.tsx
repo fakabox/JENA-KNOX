@@ -1,6 +1,6 @@
 import { Play, Share2 } from 'lucide-react';
 
-const previewTracks = ['Play Dead', 'No Sleep for the Brave', 'Paranoïa'];
+const previewTracks = ['Play Dead', 'No Sleep for the Brave', 'Paranoia'];
 
 export default function Home() {
   return (
@@ -30,12 +30,12 @@ export default function Home() {
             <p className="eyebrow">THE NEW ALBUM · 15 TRACKS</p>
             <h1>What Happened<br />to the Fun</h1>
             <p className="intro">
-              Fifteen songs caught between after-hours electricity, restless
-              nights and the moment the mirror ball starts to crack.
+              Listen to short previews from all 15 tracks on Jena Knox’s new
+              album.
             </p>
             <a className="primary-action" href="#tracklist">
               <Play size={17} fill="currentColor" aria-hidden="true" />
-              Listen to the previews
+              Listen to album previews
             </a>
           </div>
         </div>
@@ -45,9 +45,9 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <p className="eyebrow orange">TRACKLIST</p>
-            <h2>Hear the album</h2>
+            <h2>Album previews</h2>
           </div>
-          <p>Short previews, played in album order.</p>
+          <p>Play any track to hear a preview. The next song starts automatically.</p>
         </div>
 
         <div className="track-list">
