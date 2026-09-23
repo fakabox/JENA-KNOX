@@ -21,7 +21,7 @@ const platforms = [];
 
 const icons = {
   play: '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"></path></svg>',
-  pause: '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 6v12M16 6v12"></path></svg>',
+  pause: '<svg aria-hidden="true" viewBox="0 0 24 24"><rect x="7" y="5" width="3.5" height="14" rx="1"></rect><rect x="13.5" y="5" width="3.5" height="14" rx="1"></rect></svg>',
 };
 
 const audio = new Audio();
